@@ -79,7 +79,6 @@ private:
 
     ~Holder() {
         if (this->wintun) {
-            WintunDeleteDriver();
             FreeLibrary(this->wintun);
             this->wintun = NULL;
         }
